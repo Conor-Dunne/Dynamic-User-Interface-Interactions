@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic User Interface Interactions</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="dropdown">
-                <h1>Menu</h1>
-                <div class="dropdown-list" >
-                    <ul class="links">
-                        <li class="nav-btn">Home</li>
-                        <li class="nav-btn">Contact</li>
-                        <li class="nav-btn">Option</li>
-                        <li class="nav-btn">Help</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="main">
-            <h1>Main</h1>
-        </div>
-    </div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</body>
-<script src="./script.js"></script>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="dropdown">
+          <h1>Menu</h1>
+          <div class="dropdown-list">
+            <ul class="links">
+              <li class="nav-btn">Home</li>
+              <li class="nav-btn">Contact</li>
+              <li class="nav-btn">Option</li>
+              <li class="nav-btn">Help</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <h1>Main</h1>
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left">
+            <img src="./images/double-left-arrow-4849.svg" alt="" />
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide">
+                <img
+                  class="carousel__images"
+                  src="./images/admin-dashboard.png"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__images" src="./images/library-app.png" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__images" src="./images/tic-tac-toe" />
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="./images/double-arrow-4847.svg" alt="" />
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
