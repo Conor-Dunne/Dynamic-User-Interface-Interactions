@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body,html {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+}
+
+nav {
+    flex: 0;
+    background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    width: max-content;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+}
+
+.visible {
+    display: block;
+}
+
+.main {
+    flex: 1;
+    background-color: aquamarine;
+}
+
+ul {
+    background-color: blanchedalmond;
+    width: max-content;
+    padding: 10px;
+}
